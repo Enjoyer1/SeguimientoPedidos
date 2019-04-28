@@ -55,3 +55,4 @@ class UserOrdersController extends Controller
     {
         return view('show', compact('order'));
     }
+}

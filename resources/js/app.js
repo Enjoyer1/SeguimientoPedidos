@@ -22,7 +22,7 @@ Vue.component('order-notifications', require('./components/OrderNotifications.vu
 const app = new Vue({
     el: '#app',
     mounted() {
-      Echo.channel('pizza-tracker')
+      Echo.channel('pedidos-tracker')
       .listen('OrderStatusChanged', (e) => {
         console.log('omgggg realtime bro')
       });

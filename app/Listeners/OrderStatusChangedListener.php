@@ -6,7 +6,7 @@ use App\Events\OrderStatusChanged;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class OrderStatusChangedListener implements ShouldBroadcast
+class OrderStatusChangedListener 
 {
     /**
      * Create the event listener.

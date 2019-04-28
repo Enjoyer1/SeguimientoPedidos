@@ -12,6 +12,11 @@ Route::get('/fire', function () {
 Auth::routes();
 // User Routes
 Route::middleware('auth')->group(function () {
+
+	Route::get('/home', function(){
+
+		return view('home');
+	});
 	Route::get('/orders', 'UserOrdersController@index')->name('user.orders');
 	Route::get('/orders/create', 'UserOrdersController@create')->name('user.orders.create');
 	Route::post('/orders', 'UserOrdersController@store')->name('user.orders.store');
